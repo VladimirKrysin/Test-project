@@ -23,7 +23,7 @@ const Sidebar = ({ className }: SidebarProps) => {
       data-testId="Sidebar"
       className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
     >
-      <Button data-testId="sidebar-toggle" onClick={onToggle}>
+      <Button data-testId="sidebar" onClick={onToggle}>
         {t('toggle')}
       </Button>
       <div className={cls.switchers}>
