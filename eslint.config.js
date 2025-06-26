@@ -42,7 +42,7 @@ export default tseslint.config(
       'react/self-closing-comp': ['error', { component: true, html: true }],
       'i18next/no-literal-string': [
         'warn',
-        { markupOnly: true, ignoreAtttribute: ['data-testid', 'to'] },
+        { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
       ],
       'max-lines': ['warn', { max: 124 }],
       'max-params': ['error', 3],
@@ -58,5 +58,4 @@ export default tseslint.config(
       },
     ],
   },
-  storybook.configs['flat/recommended'],
 );
