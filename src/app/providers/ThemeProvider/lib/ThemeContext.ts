@@ -1,8 +1,8 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 enum Theme {
-  LIGHT = "light",
-  DARK = "dark",
+  LIGHT = 'app_light_theme',
+  DARK = 'app_dark_theme',
 }
 
 interface ThemeContextProps {
@@ -10,7 +10,7 @@ interface ThemeContextProps {
   setTheme?: (theme: Theme) => void;
 }
 
-const LOCAL_STORAGE_THEME_KEY = "theme";
+const LOCAL_STORAGE_THEME_KEY = 'theme';
 
 const ThemeContext = createContext<ThemeContextProps>({});
 
