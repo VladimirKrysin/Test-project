@@ -11,5 +11,10 @@
   "Короткий язык": "En",
   "Войти": "Sign in",
   "Увеличить": "Increment",
-  "Уменьшить": "Decrement"
+  "Уменьшить": "Decrement",
+  "Вы ввели неверный логин или пароль": "You entered an incorrect login or password",
+  "Форма авторизации": "Authorization form",
+  "Введите текст": "Enter text",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
