@@ -4,7 +4,9 @@ import {
   DynamicModelLoader,
   ReducersList,
 } from 'shared/lib/components/DynamicModelLoader/DynamicModelLoader';
-import { profileReducer } from 'entities/Profile';
+import { fetchProfileData, ProfileCard, profileReducer } from 'entities/Profile';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
+import { useEffect } from 'react';
 
 const reducers: ReducersList = {
   profile: profileReducer,
@@ -16,9 +18,16 @@ interface ProfilePageProps {
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
   const { t } = useTranslation();
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    dispatch(fetchProfileData());
+  }, []);
+
   return (
     <DynamicModelLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames('', {}, [className])}>{t('Профиль')}</div>
+      <div className={classNames('', {}, [className])}>
+        <ProfileCard />
+      </div>
     </DynamicModelLoader>
   );
 };

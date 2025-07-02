@@ -11,6 +11,11 @@ interface SidebarItemProps {
 
 const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
   const { t } = useTranslation();
+
+  if (!item) {
+    return null;
+  }
+
   return (
     <AppLink
       className={classNames(cls.item, { [cls.collapsed]: collapsed })}
