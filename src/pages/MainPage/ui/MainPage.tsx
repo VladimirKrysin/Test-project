@@ -10,7 +10,7 @@ const MainPage = () => {
     setValue(val);
   };
   return (
-    <div>
+    <div style={{ color: 'blue' }}>
       {t('Главная страница')}
       <Input value={value} placeholder={t('Введите текст')} onChange={onChange} />
     </div>
