@@ -45,4 +45,13 @@ interface Article {
   blocks: ArticleBlock[];
 }
 
-export { Article, ArticleType };
+export {
+  Article,
+  ArticleType,
+  ArticleBlock,
+  ArticleBlockType,
+  ArticleTextBlock,
+  ArticleCodeBlock,
+  ArticleImageBlock,
+  ArticleBlockBase,
+};
