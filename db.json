@@ -116,14 +116,28 @@
       "role": "USER"
     }
   ],
-  "profile": {
-    "first": "jgh",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://yt3.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Test",
+      "lastname": "User",
+      "age": 21,
+      "currency": "USD",
+      "country": "Kazakhstan",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://media.istockphoto.com/id/519078723/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9-%D1%81%D0%B8%D0%BB%D1%83%D1%8D%D1%82-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80-%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8F-%D1%84%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8.jpg?s=612x612&w=0&k=20&c=M_FAah4xDLfYnLb4Yjk8gX4b0cfkLoOBj23yVceebVM="
+    },
+    {
+      "id": "2",
+      "first": "Test",
+      "lastname": "User",
+      "age": 21,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "user2",
+      "avatar": "https://www.e-xecutive.ru/uploads/article/image/1991542/thumb_programmer.jpg"
+    }
+  ]
 }
